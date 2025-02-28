@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ForgeX Branding Guidelines</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
   <style>
     :root {
       --color-background: oklch(98.51% 0 0);
@@ -35,11 +38,13 @@
       --radius-md: calc(0.6rem - 2px);
       --radius-lg: 0.6rem;
       --radius-xl: calc(0.6rem + 4px);
+      --font-family: 'Reem Kufi', sans-serif;
     }
 
     body {
       background-color: var(--color-background);
       color: var(--color-foreground);
+      font-family: var(--font-family);
     }
 
     .primary-bg {
@@ -132,9 +137,28 @@
       align-items: center;
       margin: 0 1rem 1.5rem 0;
     }
+
+    .font-example {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: var(--color-muted);
+      border-radius: var(--radius-lg);
+    }
+
+    .font-weights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .font-weight-example {
+      flex: 1;
+      min-width: 200px;
+    }
   </style>
 </head>
-<body class="font-sans">
+<body>
   <!-- Navigation -->
   <nav class="py-4 px-6 md:px-12 flex justify-between items-center border-b border-color">
     <div class="text-2xl font-bold">ForgeX</div>
@@ -260,32 +284,63 @@
     <section id="typography" class="mb-20">
       <div class="mb-10">
         <h2 class="text-3xl font-bold mb-4">Typography</h2>
-        <p class="text-lg">Our typography system is designed for clarity and readability across all platforms.</p>
+        <p class="text-lg">Our typography system uses Reem Kufi, a modern Arabic sans serif font with Latin support, designed for clarity and readability across all platforms.</p>
       </div>
 
       <div class="card-bg rounded-card p-8">
+        <div class="mb-10">
+          <h3 class="text-xl font-semibold mb-6">Brand Font: Reem Kufi</h3>
+          <div class="font-example">
+            <p class="text-sm mb-1 text-gray-500">Import URL:</p>
+            <div class="color-code mb-4">@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap");</div>
+            <p class="text-sm mb-1 text-gray-500">HTML Link:</p>
+            <div class="color-code mb-4">&lt;link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet"&gt;</div>
+            <p class="text-sm mb-1 text-gray-500">CSS Usage:</p>
+            <div class="color-code mb-4">font-family: 'Reem Kufi', sans-serif;</div>
+            
+            <div class="font-weights">
+              <div class="font-weight-example">
+                <p class="text-sm text-gray-500 mb-2">Regular (400)</p>
+                <p style="font-weight: 400">The quick brown fox jumps over the lazy dog.</p>
+              </div>
+              <div class="font-weight-example">
+                <p class="text-sm text-gray-500 mb-2">Medium (500)</p>
+                <p style="font-weight: 500">The quick brown fox jumps over the lazy dog.</p>
+              </div>
+              <div class="font-weight-example">
+                <p class="text-sm text-gray-500 mb-2">Semibold (600)</p>
+                <p style="font-weight: 600">The quick brown fox jumps over the lazy dog.</p>
+              </div>
+              <div class="font-weight-example">
+                <p class="text-sm text-gray-500 mb-2">Bold (700)</p>
+                <p style="font-weight: 700">The quick brown fox jumps over the lazy dog.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="mb-10">
           <h3 class="text-xl font-semibold mb-6">Headings</h3>
           <div class="space-y-6">
             <div>
               <h1 class="text-5xl font-bold">Heading 1</h1>
-              <p class="text-sm mt-2 text-gray-500">Font size: 3rem (48px) | Weight: Bold</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 3rem (48px) | Weight: Bold (700)</p>
             </div>
             <div>
               <h2 class="text-4xl font-bold">Heading 2</h2>
-              <p class="text-sm mt-2 text-gray-500">Font size: 2.25rem (36px) | Weight: Bold</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 2.25rem (36px) | Weight: Bold (700)</p>
             </div>
             <div>
               <h3 class="text-3xl font-bold">Heading 3</h3>
-              <p class="text-sm mt-2 text-gray-500">Font size: 1.875rem (30px) | Weight: Bold</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 1.875rem (30px) | Weight: Bold (700)</p>
             </div>
             <div>
               <h4 class="text-2xl font-semibold">Heading 4</h4>
-              <p class="text-sm mt-2 text-gray-500">Font size: 1.5rem (24px) | Weight: Semibold</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 1.5rem (24px) | Weight: Semibold (600)</p>
             </div>
             <div>
               <h5 class="text-xl font-semibold">Heading 5</h5>
-              <p class="text-sm mt-2 text-gray-500">Font size: 1.25rem (20px) | Weight: Semibold</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 1.25rem (20px) | Weight: Semibold (600)</p>
             </div>
           </div>
         </div>
@@ -295,15 +350,15 @@
           <div class="space-y-6">
             <div>
               <p class="text-lg">Large Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="text-sm mt-2 text-gray-500">Font size: 1.125rem (18px) | Weight: Regular</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 1.125rem (18px) | Weight: Regular (400)</p>
             </div>
             <div>
               <p>Regular Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="text-sm mt-2 text-gray-500">Font size: 1rem (16px) | Weight: Regular</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 1rem (16px) | Weight: Regular (400)</p>
             </div>
             <div>
               <p class="text-sm">Small Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="text-sm mt-2 text-gray-500">Font size: 0.875rem (14px) | Weight: Regular</p>
+              <p class="text-sm mt-2 text-gray-500">Font: Reem Kufi | Size: 0.875rem (14px) | Weight: Regular (400)</p>
             </div>
           </div>
         </div>
@@ -363,7 +418,7 @@
               </li>
               <li class="flex items-start">
                 <span class="primary-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✓</span>
-                <span>Maintain consistent spacing between elements</span>
+                <span>Always use Reem Kufi font for all text elements</span>
               </li>
               <li class="flex items-start">
                 <span class="primary-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✓</span>
@@ -380,7 +435,7 @@
             <ul class="space-y-3">
               <li class="flex items-start">
                 <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
-                <span>Mix different border radius values on the same page</span>
+                <span>Use fonts other than Reem Kufi for any branded materials</span>
               </li>
               <li class="flex items-start">
                 <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
@@ -392,7 +447,7 @@
               </li>
               <li class="flex items-start">
                 <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
-                <span>Use destructive colors for non-destructive actions</span>
+                <span>Mix different font weights inappropriately</span>
               </li>
             </ul>
           </div>
