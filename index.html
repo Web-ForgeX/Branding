@@ -1,1 +1,421 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForgeX Branding Guidelines</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --color-background: oklch(98.51% 0 0);
+      --color-foreground: oklch(23.93% 0 0);
+      --color-card: oklch(92.8% 0 0);
+      --color-card-foreground: oklch(23.93% 0 0);
+      --color-popover: oklch(100% 0 0);
+      --color-popover-foreground: oklch(23.93% 0 0);
+      --color-primary: oklch(69.07% 0.1428 160.38);
+      --color-primary-foreground: oklch(98.51% 0 0);
+      --color-secondary: oklch(92.8% 0 0);
+      --color-secondary-foreground: oklch(23.93% 0 0);
+      --color-muted: oklch(97.02% 0 0);
+      --color-muted-foreground: oklch(55.55% 0 0);
+      --color-accent: oklch(97.02% 0 0);
+      --color-accent-foreground: oklch(23.93% 0 0);
+      --color-destructive: oklch(56.94% 0.1779 29.23);
+      --color-destructive-foreground: oklch(98.51% 0 0);
+      --color-border: oklch(91.58% 0 0);
+      --color-input: oklch(95.25% 0 0);
+      --color-ring: oklch(69.07% 0.1428 160.38);
+      --color-chart-1: oklch(69.07% 0.1428 160.38);
+      --color-chart-2: oklch(56.68% 0.1428 160.38);
+      --color-chart-3: oklch(52.23% 0.1428 160.38);
+      --color-chart-4: oklch(48.07% 0.1428 160.38);
+      --color-chart-5: oklch(37.39% 0.1428 160.38);
+      --radius-sm: calc(0.6rem - 4px);
+      --radius-md: calc(0.6rem - 2px);
+      --radius-lg: 0.6rem;
+      --radius-xl: calc(0.6rem + 4px);
+    }
+
+    body {
+      background-color: var(--color-background);
+      color: var(--color-foreground);
+    }
+
+    .primary-bg {
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+    }
+
+    .card-bg {
+      background-color: var(--color-card);
+      color: var(--color-card-foreground);
+    }
+
+    .secondary-bg {
+      background-color: var(--color-secondary);
+      color: var(--color-secondary-foreground);
+    }
+
+    .accent-bg {
+      background-color: var(--color-accent);
+      color: var(--color-accent-foreground);
+    }
+
+    .muted-bg {
+      background-color: var(--color-muted);
+      color: var(--color-muted-foreground);
+    }
+
+    .destructive-bg {
+      background-color: var(--color-destructive);
+      color: var(--color-destructive-foreground);
+    }
+
+    .border-color {
+      border-color: var(--color-border);
+    }
+
+    .color-swatch {
+      width: 100px;
+      height: 100px;
+      border-radius: var(--radius-md);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .rounded-card {
+      border-radius: var(--radius-lg);
+    }
+
+    .btn {
+      border-radius: var(--radius-md);
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: var(--color-primary-foreground);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    nav a {
+      color: var(--color-foreground);
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--color-primary);
+    }
+
+    .color-code {
+      font-family: monospace;
+      font-size: 0.875rem;
+      background-color: var(--color-muted);
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-sm);
+      margin-top: 0.5rem;
+    }
+
+    .color-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 1rem 1.5rem 0;
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Navigation -->
+  <nav class="py-4 px-6 md:px-12 flex justify-between items-center border-b border-color">
+    <div class="text-2xl font-bold">ForgeX</div>
+    <div class="hidden md:flex space-x-8">
+      <a href="#colors">Colors</a>
+      <a href="#typography">Typography</a>
+      <a href="#components">Components</a>
+      <a href="#usage">Usage Guidelines</a>
+    </div>
+    <a href="https://github.com/Web-ForgeX/Branding/archive/refs/heads/main.zip" class="btn btn-primary" download>Download Assets</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="py-20 px-6 md:px-12 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">ForgeX Brand Guidelines</h1>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10">A comprehensive guide to our visual identity and design system.</p>
+    <a href="#colors" class="btn btn-primary text-lg px-8 py-3">Explore Guidelines</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-6 md:px-12 py-16 max-w-7xl mx-auto">
+    <!-- Color Section -->
+    <section id="colors" class="mb-20">
+      <div class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Color Palette</h2>
+        <p class="text-lg">Our color palette is designed to reflect our brand values of innovation, trust, and reliability.</p>
+      </div>
+
+      <div class="card-bg rounded-card p-8">
+        <h3 class="text-xl font-semibold mb-6">Primary Colors</h3>
+        <div class="flex flex-wrap">
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-primary);"></div>
+            <p class="font-medium mt-2">Primary</p>
+            <div class="color-code">oklch(69.07% 0.1428 160.38)</div>
+            <div class="color-code">#2A9D8F</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-secondary);"></div>
+            <p class="font-medium mt-2">Secondary</p>
+            <div class="color-code">oklch(92.8% 0 0)</div>
+            <div class="color-code">#EDEDED</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-accent);"></div>
+            <p class="font-medium mt-2">Accent</p>
+            <div class="color-code">oklch(97.02% 0 0)</div>
+            <div class="color-code">#F7F7F7</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-destructive);"></div>
+            <p class="font-medium mt-2">Destructive</p>
+            <div class="color-code">oklch(56.94% 0.1779 29.23)</div>
+            <div class="color-code">#E76F51</div>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold mt-10 mb-6">Background Colors</h3>
+        <div class="flex flex-wrap">
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-background);"></div>
+            <p class="font-medium mt-2">Background</p>
+            <div class="color-code">oklch(98.51% 0 0)</div>
+            <div class="color-code">#FCFCFC</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-foreground);"></div>
+            <p class="font-medium mt-2">Foreground</p>
+            <div class="color-code">oklch(23.93% 0 0)</div>
+            <div class="color-code">#3D3D3D</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-card);"></div>
+            <p class="font-medium mt-2">Card</p>
+            <div class="color-code">oklch(92.8% 0 0)</div>
+            <div class="color-code">#EDEDED</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-border);"></div>
+            <p class="font-medium mt-2">Border</p>
+            <div class="color-code">oklch(91.58% 0 0)</div>
+            <div class="color-code">#E9E9E9</div>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold mt-10 mb-6">Chart Colors</h3>
+        <div class="flex flex-wrap">
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-chart-1);"></div>
+            <p class="font-medium mt-2">Chart 1</p>
+            <div class="color-code">oklch(69.07% 0.1428 160.38)</div>
+            <div class="color-code">#2A9D8F</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-chart-2);"></div>
+            <p class="font-medium mt-2">Chart 2</p>
+            <div class="color-code">oklch(56.68% 0.1428 160.38)</div>
+            <div class="color-code">#1F7A70</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-chart-3);"></div>
+            <p class="font-medium mt-2">Chart 3</p>
+            <div class="color-code">oklch(52.23% 0.1428 160.38)</div>
+            <div class="color-code">#186A62</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-chart-4);"></div>
+            <p class="font-medium mt-2">Chart 4</p>
+            <div class="color-code">oklch(48.07% 0.1428 160.38)</div>
+            <div class="color-code">#145B54</div>
+          </div>
+          <div class="color-info">
+            <div class="color-swatch" style="background-color: var(--color-chart-5);"></div>
+            <p class="font-medium mt-2">Chart 5</p>
+            <div class="color-code">oklch(37.39% 0.1428 160.38)</div>
+            <div class="color-code">#0D3F3A</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section id="typography" class="mb-20">
+      <div class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Typography</h2>
+        <p class="text-lg">Our typography system is designed for clarity and readability across all platforms.</p>
+      </div>
+
+      <div class="card-bg rounded-card p-8">
+        <div class="mb-10">
+          <h3 class="text-xl font-semibold mb-6">Headings</h3>
+          <div class="space-y-6">
+            <div>
+              <h1 class="text-5xl font-bold">Heading 1</h1>
+              <p class="text-sm mt-2 text-gray-500">Font size: 3rem (48px) | Weight: Bold</p>
+            </div>
+            <div>
+              <h2 class="text-4xl font-bold">Heading 2</h2>
+              <p class="text-sm mt-2 text-gray-500">Font size: 2.25rem (36px) | Weight: Bold</p>
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold">Heading 3</h3>
+              <p class="text-sm mt-2 text-gray-500">Font size: 1.875rem (30px) | Weight: Bold</p>
+            </div>
+            <div>
+              <h4 class="text-2xl font-semibold">Heading 4</h4>
+              <p class="text-sm mt-2 text-gray-500">Font size: 1.5rem (24px) | Weight: Semibold</p>
+            </div>
+            <div>
+              <h5 class="text-xl font-semibold">Heading 5</h5>
+              <p class="text-sm mt-2 text-gray-500">Font size: 1.25rem (20px) | Weight: Semibold</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-6">Body Text</h3>
+          <div class="space-y-6">
+            <div>
+              <p class="text-lg">Large Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-sm mt-2 text-gray-500">Font size: 1.125rem (18px) | Weight: Regular</p>
+            </div>
+            <div>
+              <p>Regular Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-sm mt-2 text-gray-500">Font size: 1rem (16px) | Weight: Regular</p>
+            </div>
+            <div>
+              <p class="text-sm">Small Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-sm mt-2 text-gray-500">Font size: 0.875rem (14px) | Weight: Regular</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="mb-20">
+      <div class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">UI Components</h2>
+        <p class="text-lg">Standardized components for creating consistent user interfaces.</p>
+      </div>
+
+      <div class="card-bg rounded-card p-8">
+        <h3 class="text-xl font-semibold mb-6">Buttons</h3>
+        <div class="flex flex-wrap gap-4 mb-10">
+          <a href="#colors" class="btn btn-primary">Primary Button</a>
+          <a href="#typography" class="btn secondary-bg">Secondary Button</a>
+          <a href="#components" class="btn destructive-bg">Destructive Button</a>
+          <a href="#usage" class="btn muted-bg">Muted Button</a>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-6">Cards</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="secondary-bg rounded-card p-6 shadow">
+            <h4 class="text-lg font-semibold mb-2">Basic Card</h4>
+            <p>Simple card component for displaying content.</p>
+          </div>
+          <div class="secondary-bg rounded-card p-6 shadow">
+            <h4 class="text-lg font-semibold mb-2">Feature Card</h4>
+            <p>Highlight key features with these cards.</p>
+            <a href="#" class="btn btn-primary mt-4">Learn More</a>
+          </div>
+          <div class="accent-bg rounded-card p-6 shadow">
+            <h4 class="text-lg font-semibold mb-2">Accent Card</h4>
+            <p>For highlighting important information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Usage Guidelines Section -->
+    <section id="usage">
+      <div class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Usage Guidelines</h2>
+        <p class="text-lg">Best practices for applying the ForgeX brand consistently.</p>
+      </div>
+
+      <div class="card-bg rounded-card p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Do's</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="primary-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✓</span>
+                <span>Use the primary color for main CTAs and important UI elements</span>
+              </li>
+              <li class="flex items-start">
+                <span class="primary-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✓</span>
+                <span>Maintain consistent spacing between elements</span>
+              </li>
+              <li class="flex items-start">
+                <span class="primary-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✓</span>
+                <span>Apply the correct border-radius to all components</span>
+              </li>
+              <li class="flex items-start">
+                <span class="primary-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✓</span>
+                <span>Follow the typography hierarchy for clear content structure</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Don'ts</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
+                <span>Mix different border radius values on the same page</span>
+              </li>
+              <li class="flex items-start">
+                <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
+                <span>Use colors outside of the defined palette</span>
+              </li>
+              <li class="flex items-start">
+                <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
+                <span>Modify the logo or apply effects that alter its appearance</span>
+              </li>
+              <li class="flex items-start">
+                <span class="destructive-bg rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1">✗</span>
+                <span>Use destructive colors for non-destructive actions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 md:px-12 border-t border-color">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="text-2xl font-bold mb-2">ForgeX</div>
+          <p class="text-sm">Brand Guidelines © 2025</p>
+        </div>
+        <div class="flex space-x-8">
+          <a href="https://discord.gg/forgex" target="_blank" class="hover:text-primary">Join our Discord</a>
+          <a href="#colors" class="hover:text-primary">Resources</a>
+          <a href="https://github.com/Web-ForgeX/Branding/archive/refs/heads/main.zip" download class="hover:text-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
